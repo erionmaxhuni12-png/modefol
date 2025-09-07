@@ -1,1 +1,96 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #0f0f0f;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.8);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a.active,
+nav a:hover {
+  color: #00c4c7;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  color: #00c4c7;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 18px;
+}
+
+/* About Section */
+.about {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+}
+
+.highlight {
+  color: #00c4c7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+  .contact p {
+    font-size: 16px;
+  }
+  .about p {
+    font-size: 16px;
+  }
+}
