@@ -17,13 +17,13 @@
 
   <section class="hero">
     <div class="cars">
-      <img src="assets/car1.jpg" alt="Car 1">
-      <img src="assets/car2.jpg" alt="Car 2">
+      <img src="assets/car1.png" alt="Car 1">
+      <img src="assets/car2.png" alt="Car 2">
     </div>
-    <h1>
-      Scheibentönung <br>
-      Carwrapping <br>
-      Werbetechnik <br>
+    <h1 class="typewriter">
+      Scheibentönung 
+      Carwrapping 
+      Werbetechnik
       Beschriftungen
     </h1>
     <div class="contact">
@@ -32,4 +32,21 @@
     </div>
   </section>
 </body>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const textElement = document.querySelector(".typewriter");
+  const text = textElement.innerHTML; // get all text with <br>
+  textElement.innerHTML = ""; // clear it first
+
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      textElement.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(type, 50); // typing speed (ms)
+    }
+  }
+  type();
+});
+</script>
 </html>
